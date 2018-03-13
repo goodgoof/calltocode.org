@@ -22,7 +22,7 @@ class Footer extends React.Component {
         <div className={styles.column2}>
           <ul className={styles.list}>
             <li className={styles.product}>Product</li>
-            <li className={styles.list-items styles.popular}><a href="#">Popular</li>
+            <li className={Object.assign({},styles.list-items, styles.popular)}><a href="#">Popular</li>
             <li className={styles.list-items}><a href="#">Trending</li>
             <li className={styles.list-items}><a href="#">Catalog</li>
           </ul>
@@ -31,7 +31,7 @@ class Footer extends React.Component {
         <div className={styles.column3}>
           <ul className={styles.list}>
             <li className={styles.company}>Company</li>
-            <li className={styles.list-items styles.press}><a href="#">Press</a></li>
+            <li className={Object.assign({},styles.list-items, styles.press)}><a href="#">Press</a></li>
             <li className={styles.list-items}><a href="#">Releases</li>
             <li className={styles.list-items}><a href="#">Mission</li>
             <li className={styles.list-items}><a href="#">Strategy</li>
@@ -39,7 +39,7 @@ class Footer extends React.Component {
           </ul>
         </div>
 
-        <div className={styles.column3}>
+        <div className={styles.column4}>
           <p className={styles.FOLLOW-US}>FOLLOW US</p>
           <div className={styles.social-media}>
             <a href="#"><img src={facebook} alt="facebook logo" className="facebook"></a>
